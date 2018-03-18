@@ -1,4 +1,5 @@
 OBJS = main.o
+CFLAGS = -O3
 
 test : $(OBJS)
 	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) -o $@
@@ -6,4 +7,4 @@ test : $(OBJS)
 .PHONY: clean
 
 clean:
-	rm -f *.o main
+	rm -f *.o test
